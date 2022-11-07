@@ -1,19 +1,42 @@
 package ru.netology.delivery.test;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class DeliveryTest {
+    WebDriver driver;
 
-    @BeforeEach
-    void SetUp() {
-        open("http://localhost:9999/");
+    @BeforeAll
+    static void setup() {
+        WebDriverManager.chromedriver().setup();
     }
+    @BeforeEach
+    public void setUp() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
+        driver.get("http://localhost:9999/");
+    }
+
+    @AfterEach
+    void teardown() {
+        driver.quit();
+    }
+
+//    @BeforeEach
+//    void SetUp() {
+//        open("http://localhost:9999/");
+//    }
 
 
     @Test
