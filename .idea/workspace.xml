@@ -36,6 +36,45 @@
     </system>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RunManager" selected="JUnit.DeliveryTest">
+    <configuration name="DeliveryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Autotests_homework_5.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.delivery.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.delivery.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.delivery.test.DeliveryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeliveryTest.shouldSuccessfulPlanAndReplanMeeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Autotests_homework_5.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.delivery.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.delivery.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.delivery.test.DeliveryTest" />
+      <option name="METHOD_NAME" value="shouldSuccessfulPlanAndReplanMeeting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DeliveryTest" />
+        <item itemvalue="JUnit.DeliveryTest.shouldSuccessfulPlanAndReplanMeeting" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <servers />
   </component>
