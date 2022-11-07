@@ -1,29 +1,13 @@
 package entities;
 
-import lombok.Data;
 
-@Data
+import lombok.Value;
+
+@Value
 public class RegistrationInfo {
-    private final String name;
-    private final String phone;
-    private final String city;
+    String name;
+    String phone;
+    String city;
 
-    public RegistrationInfo(String name, String phone, String city) {
-        this.name = name;
-        this.phone = phone;
-        this.city = city;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public String getPhone() {
-        return this.phone;
-    }
-
-    public String getCity() {
-        return this.city;
-    }
 }
 
