@@ -18,7 +18,8 @@ public class DataGenerator {
     }
 
     public static String generateCity(String locale) {
-        String[] cities = {"Белгород",
+        var cities = new String[] {
+                "Белгород",
                 "Брянск",
                 "Владимир",
                 "Воронеж",
@@ -101,16 +102,14 @@ public class DataGenerator {
                 "Владивкавказ",
                 "Ставрополь",
                 "Грозный"};
-        int goal = new Random().nextInt(cities.length);
-        String city = (cities[goal]);
-        return city;
+
+        return cities [new Random().nextInt(cities.length)];
     }
 
 
     public static String generateName(String locale) {
-        Faker faker = new Faker(new Locale(locale));
-        String name = faker.name().name();
-        return name;
+        var faker = new Faker(new Locale(locale));
+        return faker.name().lastName() + " " + faker.name().firstName();
     }
 
     public static String generatePhone(String locale) {
